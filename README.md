@@ -18,13 +18,13 @@ The repository is organized as follows:
 │   ├── clinvar_data_inputVEP_grch37.vcf
 │   ├── cleaned_ClinVar_dataset.csv
 │   └── cleaned_Clinvar_dataset_inputVEP.vcf
+├── docs/
+│   ├── DatasetCollection_ClinVar.pptx
+│   └── Thresholds_log.xlsx
 ├── notebooks/
 │   └── ClinVar_DataCleaning.ipynb
-├── scripts/
-│   └── VEP.py
-└── docs/
-    ├── DatasetCollection_ClinVar.pptx
-    └── Thresholds_log.xlsx
+└── scripts/
+    └── VEP.py
 ```
 
 ### Directory overview
