@@ -47,3 +47,11 @@ This directory contains the main Jupyter Notebook (`ClinVar_DataCleaning.ipynb`)
 #### 4. `scripts/`
 
 This directory contains the `VEP.py` script, which is used for parsing and post-processing results from the VEP tool. After running VEP, this script extracts relevant fields, formats the output for downstream analysis, and integrates key annotations required for pathogenicity predictions (i.e., filtering of column names, binarization of existing columns, etc).
+
+
+### 🔗 Data availability
+Due to file size constraints, all dataset files can be downloaded from [Google Drive/Zenodo/Figshare](linkhere!!).  
+**Instructions:**
+ 1. Click the link above and navigate to the `ClinVar-Data-Cleaning` folder.
+ 2. Download the `data/` directory and place it inside the repository.
+ 3. Ensure the folder structure matches the one described in this README.
