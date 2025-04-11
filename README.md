@@ -26,8 +26,8 @@ The repository is organized as follows:
 │   ├── Thresholds_log.xlsx
 │   └── DatasetCollection_ClinVar.pdf
 └── code/
-│   ├── ClinVar_DataCleaning.ipynb
-│   ├── merging_ClinVar.py
+    ├── ClinVar_DataCleaning.ipynb
+    ├── merging_ClinVar.py
     └── parsing_ClinVar.py
 ```
 
