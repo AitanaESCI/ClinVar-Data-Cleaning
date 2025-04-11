@@ -16,15 +16,19 @@ The repository is organized as follows:
 │   ├── clinvar_data_outputVEP_grch37.txt
 │   ├── clinvar_data_inputVEP_grch38.vcf
 │   ├── clinvar_data_inputVEP_grch37.vcf
+│   ├── cleaned_Clinvar_dataset_inputVEP.vcf
+│   ├── cleaned_Clinvar_dataset_outputVEP.txt
+│   ├── cleaned_Clinvar_dataset_parsed.csv
 │   ├── cleaned_ClinVar_dataset.csv
-│   └── cleaned_Clinvar_dataset_inputVEP.vcf
+│   ├── uniprotkb_reviewed_true_AND_organism_id_2025_04_09.list
+│   └── cleaned_ClinVar_with_preds.csv
 ├── docs/
-│   ├── DatasetCollection_ClinVar.pptx
-│   └── Thresholds_log.xlsx
-├── notebooks/
-│   └── ClinVar_DataCleaning.ipynb
-└── scripts/
-    └── VEP.py
+│   ├── Thresholds_log.xlsx
+│   └── DatasetCollection_ClinVar.pdf
+└── code/
+│   ├── ClinVar_DataCleaning.ipynb
+│   ├── merging_ClinVar.py
+    └── parsing_ClinVar.py
 ```
 
 ### Directory overview
