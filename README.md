@@ -44,7 +44,7 @@ This directory contains all raw, intermediate, and final datasets used throughou
 All files in this directory are generated or transformed at various stages of the preprocessing pipeline.
 
 **Note**: due to file size limitations, this folder is not included directly in the repository. 
-All files can be downloaded from [Google Drive/Zenodo/Figshare](linkhere!!). See the [Data availability](#data-availability) section for instructions.
+All files can be downloaded from [Zenodo](https://doi.org/10.5281/zenodo.15275244). See the [Data availability](#data-availability) section for instructions.
 
 
 #### 2. `docs/`
@@ -63,6 +63,6 @@ Includes all code used for dataset cleaning, transformation, and VEP integration
 
 ## Data availability
 To access the dataset files:
-1. Visit [Google Drive/Zenodo/Figshare](linkhere!!)
+1. Visit [Zenodo](https://doi.org/10.5281/zenodo.15275244)
 2. Download the full `data/` directory and place it inside the repository.
 3. Ensure the folder structure matches the one described above.
