@@ -1,9 +1,9 @@
 # ClinVar-Data-Cleaning
 
-This repository contains code to clean and filter genetic variant data from ClinVar, ensuring quality and consistency for downstream analysis. The primary goal is to preprocess the dataset for accurate Variant Effect Predictor (VEP) usage, allowing pathogenicity predictions on a curated dataset.
+This repository contains code to clean and filter genetic variant data from ClinVar, ensuring quality and consistency for later analysis. The primary goal is to preprocess the dataset for accurate Variant Effect Predictor (VEP) usage, allowing pathogenicity predictions on a curated dataset.
 
 
-### Repository structure
+## Repository structure
 
 The repository is organized as follows:
 ```bash
@@ -31,31 +31,38 @@ The repository is organized as follows:
     └── parsing_ClinVar.py
 ```
 
-### Directory overview
+## Directory overview
 
 #### 1. `data/`
 
-This directory contains both the raw and processed ClinVar datasets. The `variant_summary.txt` file includes the original variant dataset from ClinVar. The `clinvar_data_preVEP_grch38.csv` and `clinvar_data_preVEP_grch37.csv` files are the cleaned datasets before VEP processing, corresponding to different genome assemblies (GRCh37 and GRCh38). The `clinvar_data_inputVEP.vcf` files serve as input for the VEP tool, while the `clinvar_data_outputVEP.txt` files store the annotated results after running VEP. The final cleaned datasets (`cleaned_ClinVar_dataset.csv` and `.vcf`) are optimized for downstream pathogenicity predictions.
+This directory contains all raw, intermediate, and final datasets used throughout the pipeline. It includes:
+	•	Original and cleaned ClinVar datasets for both GRCh37 and GRCh38 assemblies.
+	•	VEP input/output files in `.vcf` and `.txt` formats.
+	•	Processed datasets formatted and filtered for pathogenicity prediction workflows.
+	•	Reference lists used for gene/protein validation.
+
+All files in this directory are generated or transformed at various stages of the preprocessing pipeline.
+
+**Note**: due to file size limitations, this folder is not included directly in the repository. 
+All files can be downloaded from [Google Drive/Zenodo/Figshare](linkhere!!). See the [Data availability](#data-availability) section for instructions.
 
 
 #### 2. `docs/`
 
-This directory contains documentation and supplementary resources. The `DatasetCollection_ClinVar.pptx` presentation provides an overview of the dataset sources, processing workflow, and filtering logic used in the cleaning pipeline. The `Thresholds_log.xlsx` file compiles literature-based threshold cutoffs for various pathogenicity predictors, detailing criteria used to interpret the VEP results and validate filtering choices.
+Contains supporting materials used during development and validation of the cleaning process:
+	•	Threshold reference sheets with cutoff values from literature for interpreting pathogenicity predictors.
+	•	Methodology documentation: presentation slides outlining dataset origin, quality control logic, and pipeline structure.
 
 
-#### 3. `notebooks/`
+#### 3. `code/`
 
-This directory contains the main Jupyter Notebook (`ClinVar_DataCleaning.ipynb`), where the dataset preprocessing is implemented. The notebook details data cleaning steps, filtering criteria, handling of missing values, standardization of variant representation, and preparation for VEP input. The filtering steps remove also low-confidence variants and format the data correctly for annotation tools.
-
-
-#### 4. `scripts/`
-
-This directory contains the `VEP.py` script, which is used for parsing and post-processing results from the VEP tool. After running VEP, this script extracts relevant fields, formats the output for downstream analysis, and integrates key annotations required for pathogenicity predictions (i.e., filtering of column names, binarization of existing columns, etc).
+Includes all code used for dataset cleaning, transformation, and VEP integration:
+	•	The main Jupyter notebook documents the cleaning and filtering pipeline.
+	•	Supporting Python scripts handle specific steps like merging data or parsing VEP output.
 
 
-### 🔗 Data availability
-Due to file size constraints, all dataset files can be downloaded from [Google Drive/Zenodo/Figshare](linkhere!!).  
-**Instructions:**
- 1. Click the link above and navigate to the `ClinVar-Data-Cleaning` folder.
- 2. Download the `data/` directory and place it inside the repository.
- 3. Ensure the folder structure matches the one described in this README.
+## Data availability
+To access the dataset files:
+	1.	Visit [Google Drive/Zenodo/Figshare](linkhere!!)
+	2.	Download the full `data/` directory and place it inside the repository.
+	3.	Ensure the folder structure matches the one described above.
