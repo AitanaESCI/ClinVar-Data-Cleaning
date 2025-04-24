@@ -63,6 +63,6 @@ Includes all code used for dataset cleaning, transformation, and VEP integration
 
 ## Data availability
 To access the dataset files:
-1. Visit [Zenodo](https://doi.org/10.5281/zenodo.15275244)
+1. Visit  [![Zenodo](https://zenodo.org/badge/DOI/10.5281/zenodo.15275244.svg)](https://doi.org/10.5281/zenodo.15275244)
 2. Download the full `data/` directory and place it inside the repository.
 3. Ensure the folder structure matches the one described above.
